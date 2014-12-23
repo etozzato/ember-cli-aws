@@ -37,5 +37,8 @@
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "dependencies": {
+    "knox": "^0.9.1"
   }
 }
