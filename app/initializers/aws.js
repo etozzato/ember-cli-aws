@@ -1,10 +1,8 @@
-// var Client = require('knox/lib/index.js');
+
+/* jshint node: true */
+'use strict';
 
 export default {
-  name: 'aws',
-  initialize: function(container, application) {
-    container.register('aws-client:main', Client);
-    application.inject('route', 'Client', 'aws-client:main');
-  },
-  Client
+  name: 'ember-cli-aws',
+  s3: new AWS.S3( { Bucket: 'attachment_storage_development', credentials: { accessKeyId: '123456', secretAccessKey: 'lidsbflSFBSALFIUasbfisaubfasiofB' } } )
 };
